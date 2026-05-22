@@ -1,0 +1,334 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111111;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #111111;
+}
+
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../immagini/cefalu-duomo-hd.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+
+.about-section {
+    background: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.section-title, .about-section h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #111111;
+}
+
+.about-text {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #444444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+.cards-section {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 25px;
+    background: #ffffff;
+    flex-grow: 1;
+}
+
+.card-info h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #111111;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+
+.page-detail {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.container-inner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #666666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #111111;
+}
+
+
+.page-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+
+.detail-image-wrapper {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.detail-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.detail-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+
+.info-block {
+    flex: 2;
+}
+
+.info-block h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+.info-block p {
+    font-size: 1.05rem;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+
+.info-sidebar {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.info-sidebar h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #111111;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+.info-sidebar ul {
+    list-style: none;
+}
+
+.info-sidebar ul li {
+    font-size: 0.95rem;
+    color: #444444;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111111;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links li {
+        margin: 0 15px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .detail-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .detail-image-wrapper {
+        height: 300px;
+    }
+}
